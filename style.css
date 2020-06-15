@@ -1,9 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
+body {
+  font-family: 'Open Sans', sans-serif;
+  background-color: #f5f5dc;
+  color: #1d1b1b;
+}
+
+h1, p {
+  text-align: center;
+}
+
+button {
+  margin: 0 auto;
+}
 .mapboxgl-ctrl-geocoder {
   width: 300px!important;
 }
@@ -12,11 +27,37 @@
   margin-left: 30px!important;
 }
 
+#dark-mode {
+  display: block;
+  margin: 10px auto;
+  border: none;
+  color: #f1f1f1;
+  background-color: #777;
+  font-size: 12px;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#dark-mode:active {
+  transform: scale(0.97)
+}
+
+#dark-mode:focus {
+  outline: none;
+}
+
 #map { 
+  border: 1px solid #888;
+  border-radius: 2px;
   position: absolute; 
-  top: 50%; 
+  top: 54%; 
   left: 50%; 
-  width: 1000px;
+  width: 800px;
   height: 600px;
   transform: translate(-50%, -50%)
+}
+
+#subtitle {
+  font-style: italic;
 }

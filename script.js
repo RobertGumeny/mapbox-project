@@ -1,4 +1,5 @@
 const MODE_BUTTON = document.getElementById("dark-mode")
+let body = document.getElementById("body")
 
 
 const MAPBOX_STYLE_LIGHT = 'mapbox://styles/rgumeny/ckbgphp5d46y71iqrbjbn2gtc/draft';
@@ -14,9 +15,13 @@ const ACCESS_TOKEN = 'pk.eyJ1Ijoicmd1bWVueSIsImEiOiJja2JncGJ4cHcxN2ptMzVvNDVzYzF
 function toggleDarkMode() {
   if (!darkmode) {
     darkmode = true;
+    body.style.backgroundColor = '#444'
+    body.style.color = '#f4f4f4'
     map.setStyle(MAPBOX_STYLE_DARK)
     MODE_BUTTON.innerText = "Light Mode";
   } else {
+    body.style.backgroundColor = '#f5f5dc'
+    body.style.color = '#1d1b1b'
     darkmode = false;
     map.setStyle(MAPBOX_STYLE_LIGHT)
     MODE_BUTTON.innerText = "Dark Mode"
