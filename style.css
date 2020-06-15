@@ -47,11 +47,17 @@ button {
   outline: none;
 }
 
+#description {
+  text-align: left;
+  width: 50%;
+  margin: 10px auto;
+}
+
 #map { 
   border: 1px solid #888;
   border-radius: 2px;
   position: absolute; 
-  top: 54%; 
+  top: 65%; 
   left: 50%; 
   width: 800px;
   height: 600px;
